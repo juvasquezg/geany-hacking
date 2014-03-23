@@ -1,0 +1,300 @@
+# project geany (1.24) configured on Wed Mar  5 21:52:10 2014 by
+# waf 1.7.10 (abi 98, python 20703f0 on linux2)
+# using ./waf configure
+#
+----------------------------------------
+Setting top to
+/home/juvasquezg/clones/geany
+----------------------------------------
+Setting out to
+/home/juvasquezg/clones/geany/_build_
+----------------------------------------
+Checking for waf version in 1.6.1-1.8.0
+ok
+----------------------------------------
+Checking for 'gcc' (c compiler)
+find program=['gcc', 'cc'] paths=['/home/juvasquezg/.nvm/v0.10.12/bin', '/usr/lib/lightdm/lightdm', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/home/juvasquezg/.rvm/bin'] var='CC' -> '/usr/bin/gcc'
+find program=['ar'] paths=['/home/juvasquezg/.nvm/v0.10.12/bin', '/usr/lib/lightdm/lightdm', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/home/juvasquezg/.rvm/bin'] var='AR' -> '/usr/bin/ar'
+/usr/bin/gcc
+----------------------------------------
+Checking for header fcntl.h
+==>
+#include <fcntl.h>
+
+int main(int argc, char **argv) {
+	(void)argc; (void)argv;
+	return 0;
+}
+
+<==
+[1/2] [32mc: _build_/.conf_check_acaab568744bf4afa7baa9c5e542a418/test.c -> _build_/.conf_check_acaab568744bf4afa7baa9c5e542a418/testbuild/test.c.1.o
+[0m
+['/usr/bin/gcc', '../test.c', '-c', '-o', 'test.c.1.o']
+[2/2] [33mcprogram: _build_/.conf_check_acaab568744bf4afa7baa9c5e542a418/testbuild/test.c.1.o -> _build_/.conf_check_acaab568744bf4afa7baa9c5e542a418/testbuild/testprog
+[0m
+['/usr/bin/gcc', 'test.c.1.o', '-o', '/home/juvasquezg/clones/geany/_build_/.conf_check_acaab568744bf4afa7baa9c5e542a418/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+yes
+----------------------------------------
+Checking for header fnmatch.h
+==>
+#include <fnmatch.h>
+
+int main(int argc, char **argv) {
+	(void)argc; (void)argv;
+	return 0;
+}
+
+<==
+[1/2] [32mc: _build_/.conf_check_7ff0908b6b6131ee2573cad1526d7fdc/test.c -> _build_/.conf_check_7ff0908b6b6131ee2573cad1526d7fdc/testbuild/test.c.1.o
+[0m
+['/usr/bin/gcc', '-DHAVE_FCNTL_H=1', '../test.c', '-c', '-o', 'test.c.1.o']
+[2/2] [33mcprogram: _build_/.conf_check_7ff0908b6b6131ee2573cad1526d7fdc/testbuild/test.c.1.o -> _build_/.conf_check_7ff0908b6b6131ee2573cad1526d7fdc/testbuild/testprog
+[0m
+['/usr/bin/gcc', 'test.c.1.o', '-o', '/home/juvasquezg/clones/geany/_build_/.conf_check_7ff0908b6b6131ee2573cad1526d7fdc/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+yes
+----------------------------------------
+Checking for header glob.h
+==>
+#include <glob.h>
+
+int main(int argc, char **argv) {
+	(void)argc; (void)argv;
+	return 0;
+}
+
+<==
+[1/2] [32mc: _build_/.conf_check_5644278044e5cb7f2b64a806ceca445f/test.c -> _build_/.conf_check_5644278044e5cb7f2b64a806ceca445f/testbuild/test.c.1.o
+[0m
+['/usr/bin/gcc', '-DHAVE_FCNTL_H=1', '-DHAVE_FNMATCH_H=1', '../test.c', '-c', '-o', 'test.c.1.o']
+[2/2] [33mcprogram: _build_/.conf_check_5644278044e5cb7f2b64a806ceca445f/testbuild/test.c.1.o -> _build_/.conf_check_5644278044e5cb7f2b64a806ceca445f/testbuild/testprog
+[0m
+['/usr/bin/gcc', 'test.c.1.o', '-o', '/home/juvasquezg/clones/geany/_build_/.conf_check_5644278044e5cb7f2b64a806ceca445f/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+yes
+----------------------------------------
+Checking for header sys/time.h
+==>
+#include <sys/time.h>
+
+int main(int argc, char **argv) {
+	(void)argc; (void)argv;
+	return 0;
+}
+
+<==
+[1/2] [32mc: _build_/.conf_check_281fdbab2ddd4867d41b2a3dcd05f71e/test.c -> _build_/.conf_check_281fdbab2ddd4867d41b2a3dcd05f71e/testbuild/test.c.1.o
+[0m
+['/usr/bin/gcc', '-DHAVE_FCNTL_H=1', '-DHAVE_FNMATCH_H=1', '-DHAVE_GLOB_H=1', '../test.c', '-c', '-o', 'test.c.1.o']
+[2/2] [33mcprogram: _build_/.conf_check_281fdbab2ddd4867d41b2a3dcd05f71e/testbuild/test.c.1.o -> _build_/.conf_check_281fdbab2ddd4867d41b2a3dcd05f71e/testbuild/testprog
+[0m
+['/usr/bin/gcc', 'test.c.1.o', '-o', '/home/juvasquezg/clones/geany/_build_/.conf_check_281fdbab2ddd4867d41b2a3dcd05f71e/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+yes
+----------------------------------------
+Checking for header sys/types.h
+==>
+#include <sys/types.h>
+
+int main(int argc, char **argv) {
+	(void)argc; (void)argv;
+	return 0;
+}
+
+<==
+[1/2] [32mc: _build_/.conf_check_1d05704947a297eab40c13cf2b5812e6/test.c -> _build_/.conf_check_1d05704947a297eab40c13cf2b5812e6/testbuild/test.c.1.o
+[0m
+['/usr/bin/gcc', '-DHAVE_FCNTL_H=1', '-DHAVE_FNMATCH_H=1', '-DHAVE_GLOB_H=1', '-DHAVE_SYS_TIME_H=1', '../test.c', '-c', '-o', 'test.c.1.o']
+[2/2] [33mcprogram: _build_/.conf_check_1d05704947a297eab40c13cf2b5812e6/testbuild/test.c.1.o -> _build_/.conf_check_1d05704947a297eab40c13cf2b5812e6/testbuild/testprog
+[0m
+['/usr/bin/gcc', 'test.c.1.o', '-o', '/home/juvasquezg/clones/geany/_build_/.conf_check_1d05704947a297eab40c13cf2b5812e6/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+yes
+----------------------------------------
+Checking for header sys/stat.h
+==>
+#include <sys/stat.h>
+
+int main(int argc, char **argv) {
+	(void)argc; (void)argv;
+	return 0;
+}
+
+<==
+[1/2] [32mc: _build_/.conf_check_0d78fd91409fd9c492554bd98937e82a/test.c -> _build_/.conf_check_0d78fd91409fd9c492554bd98937e82a/testbuild/test.c.1.o
+[0m
+['/usr/bin/gcc', '-DHAVE_FCNTL_H=1', '-DHAVE_FNMATCH_H=1', '-DHAVE_GLOB_H=1', '-DHAVE_SYS_TIME_H=1', '-DHAVE_SYS_TYPES_H=1', '../test.c', '-c', '-o', 'test.c.1.o']
+[2/2] [33mcprogram: _build_/.conf_check_0d78fd91409fd9c492554bd98937e82a/testbuild/test.c.1.o -> _build_/.conf_check_0d78fd91409fd9c492554bd98937e82a/testbuild/testprog
+[0m
+['/usr/bin/gcc', 'test.c.1.o', '-o', '/home/juvasquezg/clones/geany/_build_/.conf_check_0d78fd91409fd9c492554bd98937e82a/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+yes
+----------------------------------------
+Checking for function fgetpos
+==>
+#include <stdio.h>
+
+int main(int argc, char **argv) {
+	void *p;
+	(void)argc; (void)argv;
+	p=(void*)(fgetpos);
+	return 0;
+}
+
+<==
+[1/2] [32mc: _build_/.conf_check_bf22178839ad2a2b37ea49e617e846f8/test.c -> _build_/.conf_check_bf22178839ad2a2b37ea49e617e846f8/testbuild/test.c.1.o
+[0m
+['/usr/bin/gcc', '-DHAVE_FCNTL_H=1', '-DHAVE_FNMATCH_H=1', '-DHAVE_GLOB_H=1', '-DHAVE_SYS_TIME_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_STDLIB_H=1', '-DSTDC_HEADERS=1', '-DHAVE_REGCOMP=1', '../test.c', '-c', '-o', 'test.c.1.o']
+[2/2] [33mcprogram: _build_/.conf_check_bf22178839ad2a2b37ea49e617e846f8/testbuild/test.c.1.o -> _build_/.conf_check_bf22178839ad2a2b37ea49e617e846f8/testbuild/testprog
+[0m
+['/usr/bin/gcc', 'test.c.1.o', '-o', '/home/juvasquezg/clones/geany/_build_/.conf_check_bf22178839ad2a2b37ea49e617e846f8/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+yes
+----------------------------------------
+Checking for function ftruncate
+==>
+#include <unistd.h>
+
+int main(int argc, char **argv) {
+	void *p;
+	(void)argc; (void)argv;
+	p=(void*)(ftruncate);
+	return 0;
+}
+
+<==
+[1/2] [32mc: _build_/.conf_check_0bf4602112d4fbae1710ae1efeeec133/test.c -> _build_/.conf_check_0bf4602112d4fbae1710ae1efeeec133/testbuild/test.c.1.o
+[0m
+['/usr/bin/gcc', '-DHAVE_FCNTL_H=1', '-DHAVE_FNMATCH_H=1', '-DHAVE_GLOB_H=1', '-DHAVE_SYS_TIME_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_STDLIB_H=1', '-DSTDC_HEADERS=1', '-DHAVE_REGCOMP=1', '-DHAVE_FGETPOS=1', '../test.c', '-c', '-o', 'test.c.1.o']
+[2/2] [33mcprogram: _build_/.conf_check_0bf4602112d4fbae1710ae1efeeec133/testbuild/test.c.1.o -> _build_/.conf_check_0bf4602112d4fbae1710ae1efeeec133/testbuild/testprog
+[0m
+['/usr/bin/gcc', 'test.c.1.o', '-o', '/home/juvasquezg/clones/geany/_build_/.conf_check_0bf4602112d4fbae1710ae1efeeec133/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+yes
+----------------------------------------
+Checking for function mkstemp
+==>
+#include <stdlib.h>
+
+int main(int argc, char **argv) {
+	void *p;
+	(void)argc; (void)argv;
+	p=(void*)(mkstemp);
+	return 0;
+}
+
+<==
+[1/2] [32mc: _build_/.conf_check_d206359fa016a759e4ee6b2a722a5c31/test.c -> _build_/.conf_check_d206359fa016a759e4ee6b2a722a5c31/testbuild/test.c.1.o
+[0m
+['/usr/bin/gcc', '-DHAVE_FCNTL_H=1', '-DHAVE_FNMATCH_H=1', '-DHAVE_GLOB_H=1', '-DHAVE_SYS_TIME_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_STDLIB_H=1', '-DSTDC_HEADERS=1', '-DHAVE_REGCOMP=1', '-DHAVE_FGETPOS=1', '-DHAVE_FTRUNCATE=1', '../test.c', '-c', '-o', 'test.c.1.o']
+[2/2] [33mcprogram: _build_/.conf_check_d206359fa016a759e4ee6b2a722a5c31/testbuild/test.c.1.o -> _build_/.conf_check_d206359fa016a759e4ee6b2a722a5c31/testbuild/testprog
+[0m
+['/usr/bin/gcc', 'test.c.1.o', '-o', '/home/juvasquezg/clones/geany/_build_/.conf_check_d206359fa016a759e4ee6b2a722a5c31/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+yes
+----------------------------------------
+Checking for function strstr
+==>
+#include <string.h>
+
+int main(int argc, char **argv) {
+	void *p;
+	(void)argc; (void)argv;
+	p=(void*)(strstr);
+	return 0;
+}
+
+<==
+[1/2] [32mc: _build_/.conf_check_79f435bac3eb74d739bb5cfa005383fa/test.c -> _build_/.conf_check_79f435bac3eb74d739bb5cfa005383fa/testbuild/test.c.1.o
+[0m
+['/usr/bin/gcc', '-DHAVE_FCNTL_H=1', '-DHAVE_FNMATCH_H=1', '-DHAVE_GLOB_H=1', '-DHAVE_SYS_TIME_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_STDLIB_H=1', '-DSTDC_HEADERS=1', '-DHAVE_REGCOMP=1', '-DHAVE_FGETPOS=1', '-DHAVE_FTRUNCATE=1', '-DHAVE_MKSTEMP=1', '../test.c', '-c', '-o', 'test.c.1.o']
+[2/2] [33mcprogram: _build_/.conf_check_79f435bac3eb74d739bb5cfa005383fa/testbuild/test.c.1.o -> _build_/.conf_check_79f435bac3eb74d739bb5cfa005383fa/testbuild/testprog
+[0m
+['/usr/bin/gcc', 'test.c.1.o', '-o', '/home/juvasquezg/clones/geany/_build_/.conf_check_79f435bac3eb74d739bb5cfa005383fa/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+yes
+----------------------------------------
+Checking for 'g++' (c++ compiler)
+find program=['g++', 'c++'] paths=['/home/juvasquezg/.nvm/v0.10.12/bin', '/usr/lib/lightdm/lightdm', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/home/juvasquezg/.rvm/bin'] var='CXX' -> '/usr/bin/g++'
+(tool ar is already loaded, skipping)
+/usr/bin/g++
+----------------------------------------
+Checking for program msgfmt
+/usr/bin/msgfmt
+find program=['msgfmt'] paths=['/home/juvasquezg/.nvm/v0.10.12/bin', '/usr/lib/lightdm/lightdm', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/home/juvasquezg/.rvm/bin'] var='MSGFMT' -> '/usr/bin/msgfmt'
+----------------------------------------
+Checking for program perl
+/usr/bin/perl
+find program=['perl'] paths=['/home/juvasquezg/.nvm/v0.10.12/bin', '/usr/lib/lightdm/lightdm', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/home/juvasquezg/.rvm/bin'] var='PERL' -> '/usr/bin/perl'
+----------------------------------------
+Checking for 'intltool-merge'
+/usr/bin/intltool-merge
+----------------------------------------
+Checking for header locale.h
+==>
+#include <locale.h>
+
+int main(int argc, char **argv) {
+	(void)argc; (void)argv;
+	return 0;
+}
+
+<==
+[1/2] [32mcxx: _build_/.conf_check_1a15b97dc3c1ad21a982fc57b4c3d0fb/test.cpp -> _build_/.conf_check_1a15b97dc3c1ad21a982fc57b4c3d0fb/testbuild/test.cpp.1.o
+[0m
+['/usr/bin/g++', '-DHAVE_FCNTL_H=1', '-DHAVE_FNMATCH_H=1', '-DHAVE_GLOB_H=1', '-DHAVE_SYS_TIME_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_STDLIB_H=1', '-DSTDC_HEADERS=1', '-DHAVE_REGCOMP=1', '-DHAVE_FGETPOS=1', '-DHAVE_FTRUNCATE=1', '-DHAVE_MKSTEMP=1', '-DHAVE_STRSTR=1', '-DLOCALEDIR="/usr/local/share/locale"', '-DDATADIR="/usr/local/share"', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+[2/2] [33mcxxprogram: _build_/.conf_check_1a15b97dc3c1ad21a982fc57b4c3d0fb/testbuild/test.cpp.1.o -> _build_/.conf_check_1a15b97dc3c1ad21a982fc57b4c3d0fb/testbuild/testprog
+[0m
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/juvasquezg/clones/geany/_build_/.conf_check_1a15b97dc3c1ad21a982fc57b4c3d0fb/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+yes
+----------------------------------------
+Checking for program pkg-config
+/usr/bin/pkg-config
+find program=['pkg-config'] paths=['/home/juvasquezg/.nvm/v0.10.12/bin', '/usr/lib/lightdm/lightdm', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/home/juvasquezg/.rvm/bin'] var='PKGCONFIG' -> '/usr/bin/pkg-config'
+----------------------------------------
+Checking for 'gtk+-2.0' >= 2.16.0
+['/usr/bin/pkg-config', '--atleast-version=2.16.0', 'gtk+-2.0']
+['/usr/bin/pkg-config', '--cflags', '--libs', 'gtk+-2.0']
+out: -pthread -I/usr/include/gtk-2.0 -I/usr/lib/i386-linux-gnu/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12  -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo -lpango-1.0 -lfreetype -lfontconfig -lgobject-2.0 -lglib-2.0  
+
+yes
+----------------------------------------
+Checking for 'glib-2.0' >= 2.20.0
+['/usr/bin/pkg-config', '--atleast-version=2.20.0', 'glib-2.0']
+['/usr/bin/pkg-config', '--cflags', '--libs', 'glib-2.0']
+out: -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include  -lglib-2.0  
+
+yes
+----------------------------------------
+Checking for 'gmodule-2.0'
+['/usr/bin/pkg-config', '--cflags', '--libs', 'gmodule-2.0']
+out: -pthread -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include  -Wl,--export-dynamic -pthread -lgmodule-2.0 -lrt -lglib-2.0  
+
+yes
+----------------------------------------
+Checking for 'gio-2.0'
+['/usr/bin/pkg-config', '--cflags', '--libs', 'gio-2.0']
+out: -pthread -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include  -lgio-2.0 -lgobject-2.0 -lglib-2.0  
+
+yes
+----------------------------------------
+Checking for 'gtk+-2.0' version
+['/usr/bin/pkg-config', '--modversion', 'gtk+-2.0']
+out: 2.24.10
+
+yes
+----------------------------------------
+Checking for 'gthread-2.0'
+['/usr/bin/pkg-config', '--cflags', '--libs', 'gthread-2.0']
+out: -pthread -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include  -pthread -lgthread-2.0 -lrt -lglib-2.0  
+
+yes
+git rev-parse --short --revs-only HEAD
+out: 2f120d7
+
+----------------------------------------
+Install Geany 1.24 in
+/usr/local
+----------------------------------------
+Using GTK version
+2.24.10
+----------------------------------------
+Build with plugin support
+yes
+----------------------------------------
+Use virtual terminal support
+yes
+----------------------------------------
+Compiling Git revision
+2f120d7
